@@ -36,7 +36,7 @@ const Hero = () => {
             </h2>
             <Link
               href="/menu"
-              className="bg-rose-500 text-black gap-36 font-semibold py-3 px-6 rounded-full hover:bg-opacity-80 transition duration-300 ease-in-out"
+              className="bg-rose-500 text-black gap-36 font-bold py-3 px-6 rounded-full hover:bg-opacity-80 transition duration-300 ease-in-out"
             >
               Explore our Menus
             </Link>
