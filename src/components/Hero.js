@@ -17,9 +17,9 @@ const Hero = () => {
             alt="Hero Background"
             priority
           />
-          <div className="absolute inset-0 bg-black whitespace-nowrap bg-opacity-50 flex flex-col gap-16 items-center justify-self-start text-white text-center px-4">
+          <div className="absolute inset-1 bg-black whitespace-nowrap bg-opacity-50 flex flex-col gap-16 items-center justify-self-start text-white text-center px-6">
             <h1
-              className={`text-4xl md:text-5xl mb-4 font-bold text-center justify-items-start ${styles["hero-title"]}`}
+              className={`text-5xl md:text-5xl mb-4 font-bold text-center justify-items-start ${styles["hero-title"]}`}
             >
               Welcome to
             </h1>
