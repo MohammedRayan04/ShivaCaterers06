@@ -18,8 +18,8 @@ const Hero = () => {
             priority
           />
           <div
-            className="absolute inset-0 bg-black whitespace-nowrap bg-opacity-50 flex flex-col gap-16 items-center justify-self-start text-white text-center px-4"
-            style={{ paddingTop: "15%" }}
+            className="absolute inset-0 bg-black whitespace-nowrap bg-transparent flex flex-col gap-16 items-center justify-self-start text-white text-center px-9"
+            style={{ paddingTop: "18%" }}
           >
             <h1
               className={`text-5xl md:text-5xl mb-4 font-bold text-center justify-items-start ${styles["hero-title"]}`}
