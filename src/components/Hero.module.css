@@ -36,28 +36,110 @@
     }
   }  
 
-/* Adjust path if necessary */
-.cursive-font {
-  font-family: 'Cursive', Niconne ; /* Ensure this font is available or imported */
+.hero {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
 }
 
-.hero-title {
-  color: whitesmoke;
+.backgroundImage {
+  z-index: 1;
 }
 
-.hero-subtitle {
-  color: antiquewhite;
+/* Hero.module.css */
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column; /* Align items vertically */
+  align-items: center;
+  justify-content: flex-start; /* Start from the top */
+  text-align: center;
+  padding-top: 50px; /* Adjust padding as needed */
 }
 
-.hero-tagline {
-  color: whitesmoke;
+.backgroundImage {
+  z-index: 1;
 }
 
-.dancing-script-custom {
-  font-family: "Niconne", cursive;
-  font-optical-sizing: auto;
-  font-weight: 500;
+.heroContent {
+  position: relative;
+  z-index: 1;
+  color: white;
+  text-align: center; /* Center the content horizontally */
+}
+
+.welcomeText {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 6vw; /* Use viewport width for responsiveness */
+  margin-bottom: 3vh; /* Use viewport height for spacing */
+  margin-top: 15vh; /* Adjust the value as needed */
+  font-weight: bold; /* Make welcome text bold */
+}
+
+.companyName {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 5vw; /* Use viewport width for responsiveness */
+  margin-bottom: 2vh; /* Use viewport height for spacing */
+  white-space: nowrap; /* Adjust the value as needed */
+  font-weight: bold; /* Make Shiva Caterers bold */
+}
+
+.tagline {
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
   font-style: normal;
+  font-size: 5vw; /* Use viewport width for responsiveness */
+  margin-top: 2vh; /* Use viewport height for spacing */
 }
 
+/* Media queries for larger screens */
+@media (min-width: 768px) {
+  .welcomeText {
+    margin-bottom : -1vh; 
+    margin-top : -1vh;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 3vw; /* Smaller font size for larger screens */
+  }
   
+  .companyName {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 5vw; /* Smaller font size for larger screens */
+  }
+  
+  .tagline {
+    font-size: 3vw; /* Smaller font size for larger screens */
+  }
+}
+
+/* Media queries for smaller screens */
+@media (max-width: 767px) {
+  .welcomeText {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 7vw;
+    margin-bottom : 2vh; 
+    margin-top : -1vh;/* Larger font size for smaller screens */
+  }
+  
+  .companyName {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 11vw;
+    margin-bottom : 2vh; /* Larger font size for smaller screens */
+  }
+  
+  .tagline {
+    font-family: "Great Vibes", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 7vw; /* Larger font size for smaller screens */
+    margin-bottom : 1vh;
+    margin-top : 2vh;
+  }
+  
+}
