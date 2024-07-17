@@ -163,10 +163,7 @@ const FounderSection = () => (
         Caterers has not only flourished but also set new standards in the
         catering industry. With a keen focus on innovation and customer
         satisfaction, we have expanded our services to cater to a diverse range
-        of events, from intimate gatherings to large-scale celebrations. Our
-        team of dedicated professionals continues to uphold our founder's
-        vision, ensuring that each culinary creation reflects our commitment to
-        quality and creativity.
+        of events, from intimate gatherings to large-scale celebrations.
       </p>
       <p className="font-merriweather text-black font-black text-lg leading-relaxed mt-4">
         Achievements: With 16 years of working successfully, we have earned a
