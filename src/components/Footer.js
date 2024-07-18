@@ -95,7 +95,7 @@ const Footer = () => {
             </h3>
             <div className="text-sm text-white font-bold font-montserrat flex flex-col gap-2">
               <span className="break-words">
-                No: 3 Uggatta Road, Hunsamaranahalli Bengaluru Urban, Karnataka.
+                No: 3 Suggatta Road, Hunsamaranahalli Bengaluru Urban, Karnataka.
                 PIN CODE : 562157
               </span>
               <span className="text-blue-600  font-bold">
