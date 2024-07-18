@@ -122,8 +122,8 @@
 @media (max-width: 767px) {
   .welcomeText {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 6vw;
-    margin-bottom : 2vh; 
+    font-size: 7vw;
+    margin-bottom : 1vh; 
     margin-top : -1vh;/* Larger font size for smaller screens */
   }
   
@@ -138,8 +138,29 @@
     font-weight: 400;
     font-style: normal;
     font-size: 7vw; /* Larger font size for smaller screens */
-    margin-bottom : 1vh;
+    margin-bottom : 5vh;
     margin-top : 2vh;
   }
   
+}
+
+.heroButton {
+  background-color: transparent; /* Makes the background transparent */
+  border: 2px solid white; /* Adds a white border */
+  color: white; /* Sets the text color to white */
+  padding: 15px 30px; /* Adds more padding for a more oval shape */
+  text-decoration: none; /* Removes underline from the link */
+  font-size: 16px; /* Sets the font size */
+  cursor: pointer; /* Changes cursor to pointer on hover */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover effects */
+  border-radius: 50px; /* Rounds the corners */
+  margin-top: 50px; /* Adds some space above the button */
+  margin-bottom: 4vh; /* Adds some downward padding */
+  margin-inline-start: auto;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.heroButton:hover {
+  background-color: white; /* Changes background to white on hover */
+  color: black; /* Changes text color to black on hover */
 }
