@@ -14,7 +14,7 @@ const ContactUsPage = () => {
           {/* Address section */}
           <ContactSection
             title="Address"
-            content="No.3, Suggatta Road, Hunsamaranahalli, Bengaluru Urban - 562157, Karnataka"
+            content="No.3, Suggatta Road, Hunsamaranahalli, Yehlanka, Bengaluru Urban - 562157, Karnataka. Landmark : Near Airforce Station.."
           />
 
           {/* Email section */}
