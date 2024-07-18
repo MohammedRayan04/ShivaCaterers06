@@ -14,7 +14,7 @@ const ContactUsPage = () => {
           {/* Address section */}
           <ContactSection
             title="Address"
-            content="No.3, Suggatta Road, Hunsamaranahalli, Yehlanka, Bengaluru Urban - 562157, Karnataka. Landmark : Near Airforce Station.."
+            content="No.3, Suggatta Road, Hunsamaranahalli, Yehlanka, Bengaluru Urban - 562157, Karnataka. Landmark: Near Airforce Station.."
           />
 
           {/* Email section */}
@@ -22,7 +22,7 @@ const ContactUsPage = () => {
             title="Email"
             content={
               <a
-                href="mailto:Shivacaterers06@gmail.com"
+                href="mailto: Shivacaterers06@gmail.com"
                 className="text-blue-950 hover:underline"
               >
                 Shivacaterers06@gmail.com
