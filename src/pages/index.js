@@ -8,14 +8,13 @@ import Menuflag from "@/components/Menuflag";
 import Clientpart from "@/components/Clientpart";
 import Hero from "@/components/Hero";
 import MetaTags from "@/components/MetaTags";
-import previewImage from "../../public/cateringLogo.svg"; // Adjust the path to your image
+import previewImage from "@/assets/images/cateringLogo.png";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   const title = "Shiva Caterers";
-  const description =
-    "Shiva Caterers, we have earned a reputation for excellence and reliability.";
+  const description = "Shiva Caterers, we have earned a reputation for excellence and reliability.";
   const imageUrl = previewImage.src; // Use the imported image's src
   const url = "https://shivacaterers06.in/";
 
