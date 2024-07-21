@@ -115,6 +115,7 @@
   
   .tagline {
     font-size: 2vw; /* Smaller font size for larger screens */
+    margin-top : -2vh;
   }
 }
 
