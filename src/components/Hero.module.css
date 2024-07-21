@@ -103,7 +103,7 @@
 @media (min-width: 768px) {
   .welcomeText {
     margin-bottom : -1vh; 
-    margin-top : -1vh;
+    margin-top : -2vh;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 3vw; /* Smaller font size for larger screens */
   }
