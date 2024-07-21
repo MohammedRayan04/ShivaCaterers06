@@ -147,7 +147,7 @@ const FounderSection = () => (
       height={300}
     />
     <div className="text-center lg:text-left w-full lg:w-4/5">
-      <h3 className="font-merriweather text-4xl font-bold mb-4 text-red-600 mt-6 lg:mt-0">
+      <h3 className="font-merriweather text-4xl text-pink-700 font-bold mb-4 text-red-600 mt-6 lg:mt-0">
         Our Founder
       </h3>
       <p className="font-merriweather text-black font-black text-lg leading-relaxed mt-4">
