@@ -1,149 +1,125 @@
-/* Hero.module.css */
 .heroContent {
-    animation: fadeIn 1.5s ease-out;
+  animation: fadeIn 1.5s ease-out;
+}
+
+.heroImage {
+  transform: scale(1);
+  transition: transform 0.5s ease-out;
+}
+
+.heroImage:hover {
+  transform: scale(1.05);
+}
+
+.textContainer {
+  animation: fadeInUp 1.5s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
   }
-  
-  .heroImage {
-    transform: scale(1);
-    transition: transform 0.5s ease-out;
+  to {
+    opacity: 1;
   }
-  
-  .heroImage:hover {
-    transform: scale(1.05);
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
   }
-  
-  .textContainer {
-    animation: fadeInUp 1.5s ease-out;
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
-  
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-  
-  @keyframes fadeInUp {
-    from {
-      opacity: 0;
-      transform: translateY(20px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }  
+}  
 
 .hero {
-  position: relative;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: white;
+position: relative;
+height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+color: white;
 }
 
 .backgroundImage {
-  z-index: 1;
+z-index: 1;
 }
 
 /* Hero.module.css */
 
 .hero {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  flex-direction: column; /* Align items vertically */
-  align-items: center;
-  justify-content: flex-start; /* Start from the top */
-  text-align: center;
-  padding-top: 50px; /* Adjust padding as needed */
+position: relative;
+width: 100%;
+height: 100vh;
+display: flex;
+flex-direction: column; /* Align items vertically */
+align-items: center;
+justify-content: flex-start; /* Start from the top */
+text-align: center;
+padding-top: 50px; /* Adjust padding as needed */
 }
 
 .backgroundImage {
-  z-index: 1;
+z-index: 1;
 }
 
 .heroContent {
-  position: relative;
-  z-index: 1;
-  color: white;
-  text-align: center; /* Center the content horizontally */
+position: relative;
+z-index: 1;
+color: white;
+text-align: center; /* Center the content horizontally */
 }
 
 .welcomeText {
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-size: 6vw; /* Use viewport width for responsiveness */
-  margin-bottom: 3vh; /* Use viewport height for spacing */
-  margin-top: 15vh; /* Adjust the value as needed */
-  font-weight: bold; /* Make welcome text bold */
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+font-size: 6vw; /* Use viewport width for responsiveness */
+margin-bottom: 3vh; /* Use viewport height for spacing */
+margin-top: 15vh; /* Adjust the value as needed */
+font-weight: bold; /* Make welcome text bold */
 }
 
 .companyName {
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-size: 5vw; /* Use viewport width for responsiveness */
-  margin-bottom: 2vh; /* Use viewport height for spacing */
-  white-space: nowrap; /* Adjust the value as needed */
-  font-weight: bold; /* Make Shiva Caterers bold */
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+font-size: 5vw; /* Use viewport width for responsiveness */
+margin-bottom: 2vh; /* Use viewport height for spacing */
+white-space: nowrap; /* Adjust the value as needed */
+font-weight: bold; /* Make Shiva Caterers bold */
 }
 
 .tagline {
-  font-family: "Pacifico", cursive;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 5vw; /* Use viewport width for responsiveness */
-  margin-top: 2vh; /* Use viewport height for spacing */
+font-family: "Pacifico", cursive;
+font-weight: 400;
+font-style: normal;
+font-size: 5vw; /* Use viewport width for responsiveness */
+margin-top: 2vh; /* Use viewport height for spacing */
 }
 
 /* Media queries for larger screens */
 @media (min-width: 768px) {
-  .welcomeText {
-    margin-bottom : -1vh; 
-    margin-top : -3vh;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 2vw; /* Smaller font size for larger screens */
-  }
-  
-  .companyName {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 4vw; /* Smaller font size for larger screens */
-    margin-top : -1vh;
-  }
-  
-  .tagline {
-    font-size: 2vw; /* Smaller font size for larger screens */
-    margin-top : -2vh;
-  }
+.welcomeText {
+  margin-bottom : -1vh; 
+  margin-top : -2vh;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 2vw; /* Smaller font size for larger screens */
 }
 
-/* Media queries for smaller screens */
-@media (max-width: 767px) {
-  .welcomeText {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 6vw;
-    margin-bottom : 1vh; 
-    margin-top : -1vh;/* Larger font size for smaller screens */
-  }
-  
-  .companyName {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 10vw;
-    margin-bottom : 2vh; /* Larger font size for smaller screens */
-  }
-  
-  .tagline {
-    font-family: "Great Vibes", cursive;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 7vw; /* Larger font size for smaller screens */
-    margin-bottom : 5vh;
-    margin-top : 2vh;
-  }
-  
+.companyName {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 4vw; /* Smaller font size for larger screens */
+  margin-top : -1vh;
+}
+
+.tagline { /* Smaller font size for larger screens */
+  margin-top : -3vh;
+  margin-bottom: 3vh;
+  font-family: "Great Vibes", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2vw;
 }
 
 .heroButton {
@@ -160,9 +136,57 @@
   margin-bottom: 4vh; /* Adds some downward padding */
   margin-inline-start: auto;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  .heroButton:hover {
+  background-color: white; /* Changes background to white on hover */
+  color: black; /* Changes text color to black on hover */
+  }
+}
+
+/* Media queries for smaller screens */
+@media (max-width: 767px) {
+.welcomeText {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 6vw;
+  margin-bottom : 1vh; 
+  margin-top : -1vh;/* Larger font size for smaller screens */
+}
+
+.companyName {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 10vw;
+  margin-bottom : 2vh; /* Larger font size for smaller screens */
+}
+
+.tagline {
+  font-family: "Great Vibes", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 7vw; /* Larger font size for smaller screens */
+  margin-bottom : 5vh;
+  margin-top : 2vh;
+}
+
+}
+
+.heroButton {
+background-color: transparent; /* Makes the background transparent */
+border: 2px solid white; /* Adds a white border */
+color: white; /* Sets the text color to white */
+padding: 15px 30px; /* Adds more padding for a more oval shape */
+text-decoration: none; /* Removes underline from the link */
+font-size: 16px; /* Sets the font size */
+cursor: pointer; /* Changes cursor to pointer on hover */
+transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover effects */
+border-radius: 50px; /* Rounds the corners */
+margin-top: 50px; /* Adds some space above the button */
+margin-bottom: 4vh; /* Adds some downward padding */
+margin-inline-start: auto;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .heroButton:hover {
-  background-color: white; /* Changes background to white on hover */
-  color: black; /* Changes text color to black on hover */
+background-color: white; /* Changes background to white on hover */
+color: black; /* Changes text color to black on hover */
 }
