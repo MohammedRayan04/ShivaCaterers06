@@ -6,13 +6,27 @@ import Moreinfo from "@/components/Moreinfo";
 import Product from "@/components/Product";
 import Menuflag from "@/components/Menuflag";
 import Clientpart from "@/components/Clientpart";
+import Hero from "@/components/Hero";
+import MetaTags from "@/components/MetaTags";
+import previewImage from "@/assets/images/cateringLogo.png"; // Adjust the path to your image
 
 const inter = Inter({ subsets: ["latin"] });
-import Hero from "@/components/Hero";
 
 export default function Home() {
+  const title = "Shiva Caterers";
+  const description =
+    "Shiva Caterers, we have earned a reputation for excellence and reliability. Our commitment to quality has never wavered, and we continue to strive for perfection in every event we cater ";
+  const imageUrl = previewImage.src; // Use the imported image's src
+  const url = "https://shivacaterers06.in/";
+
   return (
     <Layout>
+      <MetaTags
+        title={title}
+        description={description}
+        imageUrl={imageUrl}
+        url={url}
+      />
       <Hero />
       <Service />
       <Moreinfo />
