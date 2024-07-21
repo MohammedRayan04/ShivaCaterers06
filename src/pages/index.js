@@ -15,7 +15,7 @@ const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
   const title = "Shiva Caterers";
   const description =
-    "Shiva Caterers, we have earned a reputation for excellence and reliability. Our commitment to quality has never wavered, and we continue to strive for perfection in every event we cater ";
+    "Shiva Caterers, we have earned a reputation for excellence and reliability.";
   const imageUrl = previewImage.src; // Use the imported image's src
   const url = "https://shivacaterers06.in/";
 
