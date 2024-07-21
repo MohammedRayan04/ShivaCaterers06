@@ -8,7 +8,7 @@ import Menuflag from "@/components/Menuflag";
 import Clientpart from "@/components/Clientpart";
 import Hero from "@/components/Hero";
 import MetaTags from "@/components/MetaTags";
-import previewImage from "@/assets/images/cateringLogo.png"; // Adjust the path to your image
+import previewImage from "../../public/cateringLogo.svg"; // Adjust the path to your image
 
 const inter = Inter({ subsets: ["latin"] });
 
