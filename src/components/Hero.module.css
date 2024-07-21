@@ -111,6 +111,7 @@
   .companyName {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 4vw; /* Smaller font size for larger screens */
+    margin-top : -1vh;
   }
   
   .tagline {
