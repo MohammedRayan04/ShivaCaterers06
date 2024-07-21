@@ -105,16 +105,16 @@
     margin-bottom : -1vh; 
     margin-top : -2vh;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 3vw; /* Smaller font size for larger screens */
+    font-size: 2vw; /* Smaller font size for larger screens */
   }
   
   .companyName {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 5vw; /* Smaller font size for larger screens */
+    font-size: 4vw; /* Smaller font size for larger screens */
   }
   
   .tagline {
-    font-size: 3vw; /* Smaller font size for larger screens */
+    font-size: 2vw; /* Smaller font size for larger screens */
   }
 }
 
