@@ -29,6 +29,9 @@ export default function Home() {
       <Product />
       <Menuflag />
       <Clientpart />
+      <div style={{ display: "flex", justifyContent: "center", marginTop: "20px" }}>
+        <Image src={previewImage} alt="Shiva Caterers Logo" />
+      </div>
     </Layout>
   );
 }
