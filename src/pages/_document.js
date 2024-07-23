@@ -5,7 +5,7 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
-        <link rel="icon" href="/cateringLogo.svg" />
+        <link rel="icon" href="/cateringLogo.png" />
       </Head>
       <body>
         <Main />
