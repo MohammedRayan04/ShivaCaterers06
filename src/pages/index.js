@@ -13,19 +13,16 @@ import previewImage from "@/assets/images/cateringLogo.png";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
-  const title = "Shiva Caterers";
-  const description = "Shiva Caterers, we have earned a reputation for excellence and reliability.";
-  const imageUrl = previewImage.src; // Use the imported image's src
-  const url = "https://shivacaterers06.in/";
+  const meta = {
+    title: "Shiva Caterers",
+    description: "Shiva Caterers, we have earned a reputation for excellence and reliability.",
+    imageUrl: previewImage.src,
+    url: "https://shivacaterers06.in/",
+  };
 
   return (
     <Layout>
-      <MetaTags
-        title={title}
-        description={description}
-        imageUrl={imageUrl}
-        url={url}
-      />
+      <MetaTags {...meta} />
       <Hero />
       <Service />
       <Moreinfo />
@@ -35,3 +32,4 @@ export default function Home() {
     </Layout>
   );
 }
+
