@@ -14,9 +14,9 @@ const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   const meta = {
+    imageUrl: previewImage.src,
     title: "Shiva Caterers",
     description: "Shiva Caterers, we have earned a reputation for excellence and reliability.",
-    imageUrl: previewImage.src,
     url: "https://shivacaterers06.in/",
   };
 
