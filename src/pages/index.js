@@ -1,4 +1,4 @@
-import Image from "next/image";
+R2import Image from "next/image";
 import { Inter } from "next/font/google";
 import Layout from "@/components/Layout";
 import Service from "@/components/Service";
@@ -28,10 +28,7 @@ export default function Home() {
       <Moreinfo />
       <Product />
       <Menuflag />
-      <Clientpart />
-      <div style={{ display: "flex", justifyContent: "center", marginTop: "20px" }}>
-        <Image src={previewImage} alt="Shiva Caterers Logo" />
-      </div>
+      <Clientpart />  
     </Layout>
   );
 }
