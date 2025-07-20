@@ -16,7 +16,7 @@ const Header = () => {
         <Image src={Logo} alt="logo" width={180} height={150} priority={true} />
       </div>
       <div className="hidden sm:flex">
-        <ul className="flex gap-8 list-none font-bold justify-center items-center text-cyan-50">
+        <ul className="flex gap-8 list-none font-bold justify-center items-center text-black">
           <li>
             <Link href="/" legacyBehavior>
               <a className="hover:text-red transition-colors duration-500 ease-in-out">
