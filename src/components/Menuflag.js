@@ -7,7 +7,7 @@ Link
 
 const Menuflag = () => {
   return (
-    <div className="flex flex-row max-md:flex-col justify-around gap-20 max-md:gap-10 max-md:items-start items-center p-4 bg-red text-white">
+    <div className="flex flex-row max-md:flex-col justify-around gap-20 max-md:gap-10 max-md:items-start items-center p-4 bg-red text-black">
     <div className="flex flex-row gap-6 items-center ">
       <div className="flex items-center justify-center max-md:h-70">
         <Image src={menuimg} width={50} height={50} alt="menuflag" /> 
