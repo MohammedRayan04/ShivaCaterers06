@@ -11,7 +11,7 @@ const Header = () => {
   };
 
   return (
-    <div className="flex justify-between items-center w-full h-24 py-4 shadow-bottom pl-4 pr-4 bg-black">
+    <div className="flex justify-between items-center w-full h-24 py-4 shadow-bottom pl-4 pr-4 bg-white">
       <div className="ml-8">
         <Image src={Logo} alt="logo" width={180} height={150} priority={true} />
       </div>
