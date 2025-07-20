@@ -18,7 +18,7 @@ const Menuflag = () => {
       </div>
     </div>
     <Link href='/menu'>
-    <button className="border border-white text-black px-5 py-3 rounded-lg text-red font-montserrat transition duration-300 ease-in-out transform cursor-pointer hover:scale-105">
+    <button className="border border-black text-black px-5 py-3 rounded-lg text-red font-montserrat transition duration-300 ease-in-out transform cursor-pointer hover:scale-105">
       View Menu
     </button></Link>
   </div>
