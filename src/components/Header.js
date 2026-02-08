@@ -3,12 +3,15 @@ import { Logo } from "@/assets/images";
 import { useState } from "react";
 import Image from "next/image";
 
+const navLinks = [
+  { name: "Home", href: "/" },
+  { name: "Menu", href: "/menu" },
+  { name: "Contact", href: "/contact-us" },
+  { name: "About Us", href: "/about-us" },
+];
+
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-
-  const toggleMenu = () => {
-    setMenuOpen(!menuOpen);
-  };
 
   return (
     <div className="flex justify-between items-center w-full h-24.5 py-4 shadow-bottom px-4 bg-white">
@@ -18,19 +21,12 @@ const Header = () => {
 
       {/* Desktop menu */}
       <div className="hidden sm:flex">
-        <ul className="flex gap-8 list-none font-bold items-center text-black">
-          {["Home", "Menu", "Contact", "About Us"].map((item, i) => (
-            <li key={i}>
-              <Link
-                href={
-                  item === "Home"
-                    ? "/"
-                    : `/${item.toLowerCase().replace(" ", "-")}`
-                }
-                legacyBehavior
-              >
+        <ul className="flex gap-8 font-bold items-center text-black">
+          {navLinks.map((item) => (
+            <li key={item.name}>
+              <Link href={item.href} legacyBehavior>
                 <a className="hover:text-red transition-colors duration-500">
-                  {item}
+                  {item.name}
                 </a>
               </Link>
             </li>
@@ -49,7 +45,7 @@ const Header = () => {
 
       {/* Mobile menu button */}
       <div className="sm:hidden relative z-10">
-        <button onClick={toggleMenu} className="p-2">
+        <button onClick={() => setMenuOpen(!menuOpen)} className="p-2">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -68,18 +64,11 @@ const Header = () => {
 
         {menuOpen && (
           <ul className="absolute right-0 top-16 w-56 bg-black text-cyan-50 font-bold flex flex-col p-4 gap-4 shadow-lg rounded-lg">
-            {["Home", "Menu", "Contact", "About Us"].map((item, i) => (
-              <li key={i}>
-                <Link
-                  href={
-                    item === "Home"
-                      ? "/"
-                      : `/${item.toLowerCase().replace(" ", "-")}`
-                  }
-                  legacyBehavior
-                >
+            {navLinks.map((item) => (
+              <li key={item.name}>
+                <Link href={item.href} legacyBehavior>
                   <a className="hover:text-red transition-colors duration-500">
-                    {item}
+                    {item.name}
                   </a>
                 </Link>
               </li>
@@ -107,4 +96,3 @@ const Header = () => {
 };
 
 export default Header;
-
