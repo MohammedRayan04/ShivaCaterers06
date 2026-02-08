@@ -11,49 +11,43 @@ const Header = () => {
   };
 
   return (
-    <div className="flex justify-between items-center w-full h-24.5 py-4 shadow-bottom pl-4 pr-4 bg-white">
+    <div className="flex justify-between items-center w-full h-24.5 py-4 shadow-bottom px-4 bg-white">
       <div className="ml-8">
-        <Image src={Logo} alt="logo" width={180} height={150} priority={true} />
+        <Image src={Logo} alt="logo" width={180} height={150} priority />
       </div>
+
+      {/* Desktop menu */}
       <div className="hidden sm:flex">
-        <ul className="flex gap-8 list-none font-bold justify-center items-center text-black">
-          <li>
-            <Link href="/" legacyBehavior>
-              <a className="hover:text-red transition-colors duration-500 ease-in-out">
-                Home
-              </a>
-            </Link>
-          </li>
-          <li>
-            <Link href="/menu" legacyBehavior>
-              <a className="hover:text-red transition-colors duration-500 ease-in-out">
-                Menu
-              </a>
-            </Link>
-          </li>
-          <li>
-            <Link href="/contact-us" legacyBehavior>
-              <a className="hover:text-red transition-colors duration-500 ease-in-out">
-                Contact
-              </a>
-            </Link>
-          </li>
-          <li>
-            <Link href="/about-us" legacyBehavior>
-              <a className="hover:text-red transition-colors duration-500 ease-in-out">
-                About Us
-              </a>
-            </Link>
-          </li>
+        <ul className="flex gap-8 list-none font-bold items-center text-black">
+          {["Home", "Menu", "Contact", "About Us"].map((item, i) => (
+            <li key={i}>
+              <Link
+                href={
+                  item === "Home"
+                    ? "/"
+                    : `/${item.toLowerCase().replace(" ", "-")}`
+                }
+                legacyBehavior
+              >
+                <a className="hover:text-red transition-colors duration-500">
+                  {item}
+                </a>
+              </Link>
+            </li>
+          ))}
         </ul>
       </div>
+
+      {/* Desktop button */}
       <div className="hidden sm:flex m-24">
         <Link href="/contact-us" legacyBehavior>
-          <a className="btn-primary hover:text-sky-50 font-bold text-white py-2 px-4 whitespace-nowrap">
+          <a className="btn-primary font-bold text-white py-2 px-4">
             Book Now
           </a>
         </Link>
       </div>
+
+      {/* Mobile menu button */}
       <div className="sm:hidden relative z-10">
         <button onClick={toggleMenu} className="p-2">
           <svg
@@ -62,7 +56,7 @@ const Header = () => {
             viewBox="0 0 24 24"
             strokeWidth="1.5"
             stroke="currentColor"
-            className="w-15 h-6 text-white"
+            className="w-6 h-6 text-black"
           >
             <path
               strokeLinecap="round"
@@ -71,39 +65,28 @@ const Header = () => {
             />
           </svg>
         </button>
+
         {menuOpen && (
-          <ul className="absolute right-0 top-16 bg-black text-cyan-50 font-bold flex flex-col items-start p-4 gap-4 shadow-lg rounded-lg">
-            <li>
-              <Link href="/" legacyBehavior>
-                <a className="hover:text-red transition-colors font-bold duration-500 ease-in-out">
-                  Home
-                </a>
-              </Link>
-            </li>
-            <li>
-              <Link href="/menu" legacyBehavior>
-                <a className="hover:text-red transition-colors font-bold duration-500 ease-in-out">
-                  Menu
-                </a>
-              </Link>
-            </li>
-            <li>
-              <Link href="/contact-us" legacyBehavior>
-                <a className="hover:text-red transition-colors font-bold duration-500 ease-in-out">
-                  Contact
-                </a>
-              </Link>
-            </li>
-            <li>
-              <Link href="/about-us" legacyBehavior>
-                <a className="hover:text-red transition-colors font-bold duration-500 ease-in-out">
-                  About Us
-                </a>
-              </Link>
-            </li>
+          <ul className="absolute right-0 top-16 w-56 bg-black text-cyan-50 font-bold flex flex-col p-4 gap-4 shadow-lg rounded-lg">
+            {["Home", "Menu", "Contact", "About Us"].map((item, i) => (
+              <li key={i}>
+                <Link
+                  href={
+                    item === "Home"
+                      ? "/"
+                      : `/${item.toLowerCase().replace(" ", "-")}`
+                  }
+                  legacyBehavior
+                >
+                  <a className="hover:text-red transition-colors duration-500">
+                    {item}
+                  </a>
+                </Link>
+              </li>
+            ))}
             <li>
               <Link href="/contact-us" legacyBehavior>
-                <a className="btn-primary text-white py-2 px-4 whitespace-nowrap">
+                <a className="btn-primary text-white py-2 px-4">
                   Book Now
                 </a>
               </Link>
@@ -111,11 +94,8 @@ const Header = () => {
           </ul>
         )}
       </div>
+
       <style jsx>{`
-        .float:hover {
-          transform: translateY(-5px);
-          transition: transform 0.3s ease-in-out;
-        }
         @media (max-width: 640px) {
           .shadow-bottom {
             box-shadow: 0 4px 2px -2px gray;
@@ -127,3 +107,4 @@ const Header = () => {
 };
 
 export default Header;
+
